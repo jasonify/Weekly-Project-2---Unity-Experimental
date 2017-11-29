@@ -19,6 +19,9 @@ public class PillScript : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        this.spinSpeed.x *= 2;
+        this.spinSpeed.y *= 2;
+        this.spinSpeed.z *= 2;
     }
 }

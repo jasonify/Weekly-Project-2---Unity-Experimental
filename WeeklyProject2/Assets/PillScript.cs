@@ -16,4 +16,9 @@ public class PillScript : MonoBehaviour {
 	void Update () {
         this.transform.Rotate(spinSpeed);
 	}
+
+    private void OnMouseDown()
+    {
+        Destroy(gameObject);
+    }
 }

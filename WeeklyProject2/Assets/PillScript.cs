@@ -7,7 +7,7 @@ public class PillScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         this.transform.position = new Vector3(0, 5, 0);
-        this.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+        this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
         this.spinSpeed = new Vector3(Random.value, Random.value, Random.value);
 	}
@@ -15,6 +15,7 @@ public class PillScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         this.transform.Rotate(spinSpeed);
+        this.transform.RotateAround(Vector3.zero, Vector3.up, 1.0f);
 	}
 
     private void OnMouseDown()

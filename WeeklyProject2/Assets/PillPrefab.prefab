@@ -9,33 +9,33 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1025607454527234}
+  m_RootGameObject: {fileID: 1461762861768458}
   m_IsPrefabParent: 1
---- !u!1 &1025607454527234
+--- !u!1 &1461762861768458
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4903424457615044}
-  - component: {fileID: 33955128621621596}
-  - component: {fileID: 136428193999744954}
-  - component: {fileID: 23891119616077690}
-  - component: {fileID: 114447171829845060}
+  - component: {fileID: 4907784233660306}
+  - component: {fileID: 33957613092939658}
+  - component: {fileID: 136384405875167070}
+  - component: {fileID: 23058680779928686}
+  - component: {fileID: 114089239891305964}
   m_Layer: 0
-  m_Name: CapsulePrefab
+  m_Name: PillPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4903424457615044
+--- !u!4 &4907784233660306
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1025607454527234}
+  m_GameObject: {fileID: 1461762861768458}
   m_LocalRotation: {x: 0.29688296, y: -0.070439294, z: 0.8785122, w: 0.36758018}
   m_LocalPosition: {x: 3, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -43,12 +43,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20, y: 30, z: 140}
---- !u!23 &23891119616077690
+--- !u!23 &23058680779928686
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1025607454527234}
+  m_GameObject: {fileID: 1461762861768458}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -75,19 +75,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33955128621621596
+--- !u!33 &33957613092939658
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1025607454527234}
+  m_GameObject: {fileID: 1461762861768458}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114447171829845060
+--- !u!114 &114089239891305964
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1025607454527234}
+  m_GameObject: {fileID: 1461762861768458}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: badd29df02409f24b8cbc38adb55e6c1, type: 3}
@@ -96,12 +96,12 @@ MonoBehaviour:
   rotateAround: {x: 0, y: -1, z: 0}
   rotateSpeed: 1
   spinSpeed: {x: 0, y: 0, z: 0}
---- !u!136 &136428193999744954
+--- !u!136 &136384405875167070
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1025607454527234}
+  m_GameObject: {fileID: 1461762861768458}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

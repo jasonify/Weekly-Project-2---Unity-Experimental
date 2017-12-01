@@ -17,7 +17,7 @@ public class PillScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         this.transform.Rotate(spinSpeed);
-        this.transform.RotateAround(Vector3.zero, rotateAround, 1.0f);
+        this.transform.RotateAround(Vector3.zero, rotateAround, rotateSpeed);
 	}
 
     public void setScale(float scale)

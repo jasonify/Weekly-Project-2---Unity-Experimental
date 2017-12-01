@@ -20,7 +20,7 @@ public class PillScript : MonoBehaviour {
         this.transform.RotateAround(Vector3.zero, rotateAround, rotateSpeed);
 	}
 
-    public void setScale(float scale)
+    public void SetScale(float scale)
     {
         this.transform.localScale = new Vector3(scale, scale, scale);
     }

@@ -9,14 +9,17 @@ public class Sketch : MonoBehaviour {
         int totalCubes = 6;
         for (int i = 0; i < totalCubes; i++)
         {
-            float perc = i / (float) totalCubes;
-            float x = perc * 3.0f;
-            float y = 5.0f;
-            float z = 0.0f;
+            for (int j = 0; j < totalCubes; j++)
+            {
+                float perc = i / (float) totalCubes;
+                float x = perc * 3.0f;
+                float y = j * 1.0f;
+                float z = 0.0f;
 
-            var newPill = (GameObject)Instantiate(myPrefab, new Vector3(x, y, z), Quaternion.identity);
-            newPill.GetComponent<PillScript>().SetScale(perc);
-            newPill.GetComponent<PillScript>().rotateSpeed = Random.value + 1.0f; 
+                var newPill = (GameObject)Instantiate(myPrefab, new Vector3(x, y, z), Quaternion.identity);
+                newPill.GetComponent<PillScript>().SetScale(perc);
+                newPill.GetComponent<PillScript>().rotateSpeed = Random.value + 1.0f;
+            }
         }
 	}
 	

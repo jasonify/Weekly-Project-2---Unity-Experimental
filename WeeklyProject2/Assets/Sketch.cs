@@ -17,7 +17,7 @@ public class Sketch : MonoBehaviour {
             float z = 0.0f;
 
             var newPill = (GameObject)Instantiate(myPrefab, new Vector3(x, y, z), Quaternion.identity);
-            newPill.GetComponent<PillScript>().SetScale(0.1f);
+            newPill.GetComponent<PillScript>().SetScale(perc);
             newPill.GetComponent<PillScript>().rotateSpeed = 0.0f; // Random.value; 
         }
 	}

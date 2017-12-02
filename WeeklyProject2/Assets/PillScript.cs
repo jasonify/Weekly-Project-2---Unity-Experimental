@@ -9,7 +9,7 @@ public class PillScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         // this.transform.position = new Vector3(0, 5, 3);
-        this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+     //   this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
         this.spinSpeed = new Vector3(Random.value, Random.value, Random.value);
 	}
@@ -22,6 +22,8 @@ public class PillScript : MonoBehaviour {
 
     public void SetScale(float scale)
     {
+        Debug.Log("scale...");
+        Debug.Log(scale);
         this.transform.localScale = new Vector3(scale, scale, scale);
     }
 

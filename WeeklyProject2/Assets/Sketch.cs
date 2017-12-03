@@ -13,12 +13,12 @@ public class Sketch : MonoBehaviour {
             {
                 float perc = i / (float) totalCubes;
                 float x = perc * 3.0f;
-                float y = 3.0f + j * 1.0f;
+                float y = 0.5f + j * 1.0f;
                 float z = 0.0f;
 
                 var newPill = (GameObject)Instantiate(myPrefab, new Vector3(x, y, z), Quaternion.identity);
                 newPill.GetComponent<PillScript>().SetScale(perc);
-                newPill.GetComponent<PillScript>().rotateSpeed = Random.value + 1.0f;
+                newPill.GetComponent<PillScript>().rotateSpeed = Random.value;
             }
         }
 	}

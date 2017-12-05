@@ -8,13 +8,13 @@ public class PillScript : MonoBehaviour {
     public Vector3 spinSpeed = Vector3.zero;
 	// Use this for initialization
 	void Start () {
-        this.spinSpeed = new Vector3(Random.value, Random.value, Random.value);
+        // this.spinSpeed = new Vector3(Random.value, Random.value, Random.value);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.Rotate(spinSpeed);
-        this.transform.RotateAround(Vector3.zero, rotateAround, rotateSpeed);
+        // this.transform.Rotate(spinSpeed);
+        // this.transform.RotateAround(Vector3.zero, rotateAround, rotateSpeed);
 	}
 
     public void SetScale(float scale)
@@ -25,10 +25,12 @@ public class PillScript : MonoBehaviour {
     private void OnMouseDown()
     {
         // Destroy(gameObject);
+        /*
         this.spinSpeed.x *= 2;
         this.spinSpeed.y *= 2;
         this.spinSpeed.z *= 2;
         rotateAround.y = -1 * rotateAround.y;
+        */
     }
 
     private void OnMouseEnter()

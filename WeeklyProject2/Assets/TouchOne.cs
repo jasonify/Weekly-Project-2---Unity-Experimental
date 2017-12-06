@@ -11,10 +11,15 @@ public class TouchOne : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(OVRInput.Get(OVRInput.Button.One))
+        if(OVRInput.GetDown(OVRInput.Button.One))
         {
             Debug.Log("input A");
         }
-		
-	}
+
+        if (OVRInput.GetDown(OVRInput.Touch.Two))
+        {
+            Debug.Log("input B");
+        }
+
+    }
 }

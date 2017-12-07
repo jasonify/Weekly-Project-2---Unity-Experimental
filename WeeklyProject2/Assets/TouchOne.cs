@@ -12,7 +12,10 @@ public class TouchOne : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float scale = 0.05f;
-        if(OVRInput.GetDown(OVRInput.Button.One))
+
+        if (OVRInput.Get(OVRInput.Button.One)) // Was presssed this frame
+
+  //      if (OVRInput.GetDown(OVRInput.Button.One)) // Was presssed this frame
         {
             Debug.Log("input A");
 

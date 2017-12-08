@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class TouchOne : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject myPrefab;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -34,7 +36,7 @@ public class TouchOne : MonoBehaviour {
             GameObject s;
 
             Debug.Log("input B");
-            s = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            s = (GameObject)Instantiate(myPrefab, new Vector3(), Quaternion.identity);  // GameObject.CreatePrimitive(myPrefab);
             // s.transform.position = new Vector3((Random.value * 461) + 10, (Random.value * 300) + 10, 0F);
             s.transform.position = this.transform.position;
             s.transform.rotation = this.transform.rotation;

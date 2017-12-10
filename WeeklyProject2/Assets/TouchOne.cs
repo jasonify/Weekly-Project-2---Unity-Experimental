@@ -15,6 +15,7 @@ public class TouchOne : MonoBehaviour {
 	void Update () {
         float scale = 0.05f;
 
+//        OVRInput.Axis2D.SecondaryThumbstick
         Vector2 vectorOne = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
         Debug.Log("--- vectorOne");
         Debug.Log(vectorOne.ToString());

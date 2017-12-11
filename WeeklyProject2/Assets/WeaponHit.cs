@@ -12,9 +12,12 @@ public class WeaponHit : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (OVRInput.GetUp(OVRInput.RawButton.X) )
+        
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             Debug.Log("HELLO");
-        }       
-	}
+        }
+    }
+		
+	
 }

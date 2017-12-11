@@ -17,8 +17,8 @@ public class TouchOne : MonoBehaviour {
 
 //        OVRInput.Axis2D.SecondaryThumbstick
         Vector2 vectorOne = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
-        Debug.Log("--- vectorOne");
-        Debug.Log(vectorOne.ToString());
+   ///  Debug.Log("--- vectorOne");
+     // Debug.Log(vectorOne.ToString());
         if (OVRInput.Get(OVRInput.Button.One)) // Was presssed this frame
 
   //      if (OVRInput.GetDown(OVRInput.Button.One)) // Was presssed this frame
